@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <link href="styles.css" rel="stylesheet">
+       <script src="https://kit.fontawesome.com/e782585afd.js"></script>
+       <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+       <!-- loads font-awesome via javascript; renders fa before rendering the page --!>
+       <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+       <title>Eric Miller - Resume</title>
+    </head>
+
+    <body>
+        <div id="wrapper">
+        <h1 class="headings">ERIC MILLER</h1>
+        <nav> 
+            <ul>
+                <li><a href="#projects-container">Projects</a></li>
+                <li><a href="#skills-container">Skills</a></li>
+                <li><a href="#experience-container">Work Experience</a></li>
+                <li><a href="#about-container">About Me</a></li>
+            </ul>
+        </nav>
+        <div id="container">
+            <div class="sections">
+                <h2 class="headings main-headings">Projects</h2>
+                <div class="section-container" id="projects-container">
+                    <div class="projects">
+                        <div class="img-container">
+                            <a href="https://ericmailr.github.io/todo-list/"><img src="assets/todo.png" alt="Todo List" height="350" width="640"></a>
+                        </div>
+                        <div class="description-container">
+                            <h3 class="headings"><a href="https://ericmailr.github.io/todo-list/">Todo List</a></h3>
+                            <a class="github-link" href="https://github.com/ericmailr/todo-list"><i class="fab fa-github"></i> github</a>
+                            <br>
+                            <ul>
+                                <li>Todo List application implemented with Javascript</li>
+                                <li>Specify due dates, descriptions, and priority levels</li> 
+                                <li>Add and save separate lists to your browser</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>javascript</li>
+                                <li>localStorage</li>
+                                <li>webpack</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="projects">
+                        <div class="img-container">
+                            <a href="https://morning-island-74563.herokuapp.com/"><img src="assets/facebook.png" alt="Fake Facebook" height="500" width="392"></a>
+                        </div>
+                        <div class="description-container">
+                            <h3 class="headings"><a href="https://morning-island-74563.herokuapp.com/">Fake Facebook</a></h3>
+                            <a class="github-link" href="https://github.com/ericmailr/odin-facebook"><i class="fab fa-github"></i> github</a>
+                            <br>
+                            <ul>
+                                <li>Bare-bones social media app modeled after Facebook and implemented with Ruby on Rails</li>
+                                <li>Sign up with your email or connect with your Facebook account</li> 
+                                <li>Post text statuses and comments</li> 
+                                <li>Send and confirm friend requests</li>
+                                <li>View a status feed containing posts from your friends</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>Ruby on Rails</li>
+                                <li>Active Record</li>
+                                <li>omniauth</li>
+                                <li>Devise</li>
+                                <li>letter-opener</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="projects">
+                        <div class="img-container">
+                            <a href="https://limitless-peak-88659.herokuapp.com/"><img src="assets/flight-booker.png" alt="Flight Booker" height="500" width="392"></a>
+                        </div>
+                        <div class="description-container">
+                            <h3 class="headings"><a href="https://limitless-peak-88659.herokuapp.com/">Fake Flight Booker</a></h3>
+                            <a class="github-link" href="https://github.com/ericmailr/odin-flight-booker"><i class="fab fa-github"></i> github</a>
+                            <br>
+                            <ul>
+                                <li>One-way fake flight booker implemented with Ruby on Rails</li>
+                                <li>Dropdown form search</li> 
+                                <li>Pick a flight and submit info for booking</li> 
+                            </ul>
+                            <ul class="tags">
+                                <li>Ruby on Rails</li>
+                                <li>Active Record</li>
+                                <li>forms</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="more-projects-container">
+                        <ul id="more-projects">
+                            <li>
+                                <div>
+                                    <a href="https://ericmailr.github.io/etchsketch/"><img src="assets/etchasketch.png" height="250" width="250"></a>
+                                    <a href="https://ericmailr.github.io/etchsketch/"><h4 class="headings"> etch-a-sketch </h4></a>
+                                    <a class="github-link" href="https://github.com/ericmailr/etchsketch"><i class="fab fa-github"></i> github</a>
+                                    <ul class="tags">
+                                        <li>Javascript</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://ericmailr.github.io/tic-tac-toe/"><img src="assets/tictactoe.png" height="250" width="250"></a>
+                                    <a href="https://ericmailr.github.io/tic-tac-toe/"><h4 class="headings"> tic-tac-toe </h4></a>
+                                    <a class="github-link" href="https://github.com/ericmailr/tic-tac-toe"><i class="fab fa-github"></i> github</a>
+                                    <ul class="tags">
+                                        <li>Javascript</li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://github.com/ericmailr/ruby_final_project"><img src="assets/chess.png" height="250" width="250"></a>
+                                    <a href="https://github.com/ericmailr/ruby_final_project"><h4 class="headings"> Command Line Chess </h4></a>
+                                    <a class="github-link" href="https://github.com/ericmailr/ruby_final_project"><i class="fab fa-github"></i> github</a>
+                                    <ul class="tags">
+                                        <li>Ruby</li>
+                                        <li>RSpec</li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://github.com/ericmailr/Boise-State/tree/master/CS-121%20Computer%20Science%20I/MineWalker"><img src="assets/Minewalker.png" height="250" width="250"></a>
+                                    <a href="https://github.com/ericmailr/Boise-State/tree/master/CS-121%20Computer%20Science%20I/MineWalker"><h4 class="headings"> Minewalker </h4></a>
+                                    <a class="github-link" href="https://github.com/ericmailr/Boise-State/tree/master/CS-121%20Computer%20Science%20I/MineWalker"><i class="fab fa-github"></i> github</a>
+                                    <ul class="tags">
+                                        <li>Java</li>
+                                    </ul>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sections alternate-sections">
+                <h2 class="headings main-headings">Skills</h2>
+                <div class="section-container" id="skills-container">
+                    <ul class="skills">
+                        <li>Object-Oriented Programming</li>
+                        <li>MVC Programming</li>
+                        <li>Java</li>
+                        <li>Ruby</li>
+                        <li>Ruby on Rails</li>
+                        <li>Javascript</li>
+                        <li>HTML(5)</li>
+                        <li>CSS(3)</li>
+                        <li>Flexbox</li>
+                    </ul>
+                    <ul class="skills">
+                        <li>SQL</li>
+                        <li>RSpec Testing</li>
+                        <li>Linux</li>
+                        <li>Git</li>
+                        <li>Vim</li>
+                        <li>Matlab</li>
+                        <li>Numerical Analysis</li>
+                        <li>MS Office</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sections">
+                <h2 class="headings main-headings">Work Experience</h2>
+                <div class="section-container" id="experience-container">
+                    <div class="img-container"><img src="assets/workexperience.png" alt="work history"></div> 
+                </div>
+            </div>
+
+            <div class="sections alternate-sections">
+                <h2 class="headings main-headings">About Me</h2>
+                <div class="section-container" id="about-container">
+                    <p>
+                        I graduated from Boise State University with a B.S. in Applied Mathematics. Through my coursework, I quickly found that I enjoyed coding quite a bit. I was able to complete a minor in Computer Science, supplemented with several extra programming electives that I found thoroughly enjoyable. Programming combines the structure, logic, and problem-solving that I love about math with the skills and tools I need to produce meaningful, practical applications. For the past two years I have spent my free time learning specifically about web development using online resources like <a href="https://www.theodinproject.com">The Odin Project</a> and <a href="https://www.pluralsight.com">Pluralsight</a>. My long-term goal is to become a full-stack web developer.
+                    </p>
+                    <div id="contact">
+                        <a href="assets/resume.pdf" download><i class="fas fa-download"></i>  Printable Resume</a> <p><i class="fas fa-envelope"></i>  ericmailr@gmail.com</p> <p><i class="fa fa-phone fa-flip-horizontal"></i>  (208) 409-6412</p> <a href="https://github.com/ericmailr"><i class="fab fa-github"></i> github</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </body>
+</html>
