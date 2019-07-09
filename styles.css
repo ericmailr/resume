@@ -38,7 +38,7 @@ a, a:link, a:visited {
     display: flex;
     justify-content: center;
     margin: 0;
-    padding-bottom: 30px;
+    padding: 30px 0;
     font-weight: bold;
 }
 
@@ -62,14 +62,14 @@ h1 {
 
 h2 {
     font-weight: normal;
-    font-size: 1.5em;
+    font-size: 2em;
 }
-
 
 h3 {
     text-align: center;
     margin: 15px;
     font-weight: bold;
+    font-size: 1.3em;
 }
 
 h3:hover, h4:hover {
@@ -81,7 +81,7 @@ nav ul {
     height: 400px;
     position: fixed;
     top: 25%;
-    left: 3%;
+    left: 2%;
     background-color: rgba(0,0,0,.7);
     border-radius: 7px;
     display: flex;
@@ -96,6 +96,7 @@ nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.2em;
 }
 
 a {
