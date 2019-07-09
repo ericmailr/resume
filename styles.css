@@ -25,13 +25,6 @@ a, a:link, a:visited {
   text-decoration: none;
 }
 
-/* prevent resizing of contents when using a smaller window */
-#wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    width: 2200px;
-}
-
 .sections {
     width: 100%;
     padding: 30px 0;
