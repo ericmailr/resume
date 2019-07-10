@@ -68,7 +68,6 @@ window.addEventListener('load', updateNavLinks);
 emailAddress.addEventListener('click', function() {
     var textArea = document.createElement("textarea");
     textArea.value = "ericmailr@gmail.com";
-    textArea.style.display = "none";
     document.body.appendChild(textArea);
     textArea.focus();
     textArea.select();
