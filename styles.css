@@ -21,7 +21,6 @@ body {
 }
 
 a, a:link, a:visited {
-  color: black;
   text-decoration: none;
 }
 
@@ -72,10 +71,6 @@ h3 {
     font-size: 1.3em;
 }
 
-h3:hover, h4:hover {
-    text-decoration: underline;
-}
-
 /* Navigation Bar */
 nav ul {
     height: 400px;
@@ -102,10 +97,6 @@ nav ul li {
 
 nav ul li:hover {
     background-color: rgba(0,0,0,.7)
-}
-
-a {
-    text-decoration: none;
 }
 
 .active {
@@ -177,7 +168,7 @@ a {
     font-size: .8em;
 }
 
-.description-container a:visited {
+a:visited {
    color: inherit; 
 }
 
@@ -230,17 +221,16 @@ img {
     list-style: none;
 }
 
-#more-projects > li {
-    text-align: center;
-}
-
 #more-projects a {
-    color: inherit;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
 }
 
-#more-projects a:visited {
-    color: inherit;
+#more-projects .github-link i {
+    margin-right: 5px;
 }
+
 
 h4 {
     margin-top: 10px;
@@ -270,12 +260,8 @@ h4 {
     line-height: 1.8em;
 }
 
-#about-container a:visited {
-   color: inherit; 
-}
-
 #about-container a:hover {
-    text-decoration: underline;
+    color: #3D9970;
 }
 
 #contact {
@@ -318,3 +304,17 @@ h4 {
     visibility: visible;
 }
 
+.sliding-middle-out::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width .3s ease, background-color .3s ease;
+}
+
+.sliding-middle-out:hover::after {
+    width: 100%;
+    background-color: black;
+}
