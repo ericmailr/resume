@@ -19,6 +19,8 @@ var aboutLink = navLinks[3].parentElement;
 
 var emailAddress = document.getElementById('email-address');
 
+var tooltiptext = document.getElementsByClassName('tooltiptext')[0];
+
 const updateNavLinks = () => {
     var windowTop = document.documentElement.scrollTop || document.body.scrollTop;
     var windowHeight = window.innerHeight;
@@ -66,6 +68,7 @@ aboutLink.addEventListener('click', updateNavLinks);
 window.addEventListener('load', updateNavLinks);
 
 emailAddress.addEventListener('click', function() {
+
     var textArea = document.createElement("textarea");
     textArea.value = "ericmailr@gmail.com";
     document.body.appendChild(textArea);
@@ -73,13 +76,16 @@ emailAddress.addEventListener('click', function() {
     textArea.select();
 
     try {
-      var successful = document.execCommand('copy');
-      var msg = successful ? 'successful' : 'unsuccessful';
-      console.log('Copying text command was ' + msg);
+      document.execCommand('copy');
+      tooltiptext.innerHTML = "Copied!";
     } catch (err) {
       console.log('Oops, unable to copy');
     }
    
     document.body.removeChild(textArea);
+});
+
+emailAddress.addEventListener('mouseout', function() {
+    tooltiptext.innerHTML = "Copy Email Address";    
 });
 

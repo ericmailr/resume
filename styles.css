@@ -268,7 +268,6 @@ h4 {
     padding-left: 200px;
     padding-right: 200px;
     line-height: 1.8em;
-    font-size: 1em;
 }
 
 #about-container a:visited {
@@ -284,10 +283,38 @@ h4 {
     justify-content: space-around;
     align-items: center;
     margin-top: 50px;
-    font-size: 1.3em;
     background-color: rgba(10,10,10,.05);
 }
 
 #email-address:hover {
    cursor: pointer; 
 }
+
+.tooltiptext {
+  visibility: hidden;
+  font-size: 14pt;
+  width: 200px;
+  background-color: black;
+  padding: 2px 5px;
+  color: white;
+  text-align: center;
+  border-radius: 7px;
+  position: absolute;
+  margin-left: 30px;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
