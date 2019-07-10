@@ -268,7 +268,7 @@ h4 {
     padding-left: 200px;
     padding-right: 200px;
     line-height: 1.8em;
-    font-size: .8em;
+    font-size: 1em;
 }
 
 #about-container a:visited {
@@ -286,4 +286,8 @@ h4 {
     margin-top: 50px;
     font-size: 1.3em;
     background-color: rgba(10,10,10,.05);
+}
+
+#email-address:hover {
+   cursor: pointer; 
 }
