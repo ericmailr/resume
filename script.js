@@ -17,6 +17,9 @@ var skillsLink = navLinks[1].parentElement;
 var experienceLink = navLinks[2].parentElement;
 var aboutLink = navLinks[3].parentElement;
 
+var emailLink = document.getElementById('email-link');
+var emailText = document.getElementById('email-text');
+
 const updateNavLinks = () => {
     var windowTop = document.documentElement.scrollTop || document.body.scrollTop;
     var windowHeight = window.innerHeight;
@@ -62,4 +65,17 @@ experienceLink.addEventListener('click', updateNavLinks);
 aboutLink.addEventListener('click', updateNavLinks);
 
 window.addEventListener('load', updateNavLinks);
+
+emailLink.addEventListener('click', function() {
+    emailText.focus();
+
+  try {
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log('Copying text command was ' + msg);
+  } catch (err) {
+    console.log('Oops, unable to copy');
+  }
+});
+
 /*    document.execCommand('copy'); */
