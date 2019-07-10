@@ -278,7 +278,7 @@ h4 {
 }
 
 .tooltiptext {
-  visibility: visible;
+  visibility: hidden;
   font-size: 14pt;
   width: 200px;
   background-color: black;
