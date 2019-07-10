@@ -27,7 +27,7 @@ a, a:link, a:visited {
 
 .sections {
     width: 100%;
-    padding: 30px 0;
+    padding: 100px 0;
 }
 
 .headings {
@@ -83,11 +83,12 @@ nav ul {
     top: 25%;
     left: 2%;
     background-color: rgba(0,0,0,.7);
-    border-radius: 7px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: stretch;
+    overflow: hidden;
 }
 
 nav ul li {
@@ -99,9 +100,16 @@ nav ul li {
     font-size: 1.2em;
 }
 
+nav ul li:hover {
+    background-color: rgba(0,0,0,.7)
+}
+
 a {
     text-decoration: none;
-    color: green;
+}
+
+.active {
+    background-color: rgba(0,0,0,.9);
 }
 
 .nav-link, .nav-link:link, .nav-link:visited {
@@ -128,8 +136,8 @@ a {
 
 /* added so navigation anchor isn't covered by header */
 .section-container {
-    margin-top: -230px;
-    padding-top: 230px;
+    margin-top: -260px;
+    padding-top: 260px;
 }
 
 #projects-container {
