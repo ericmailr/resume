@@ -140,12 +140,7 @@ nav ul li:hover {
     align-items: center;
 }
 
-@media only screen and (max-width: 360px) {
-  #container {
-      margin: 0;
-      width: 100%;
-  }
-}
+
 
 /* added so navigation anchor isn't covered by header */
 .section-container {
@@ -343,4 +338,18 @@ h4 {
 .sliding-middle-out:hover::after {
     width: 100%;
     background-color: black;
+}
+
+/* responsive to mobile */
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+@media only screen and (max-width: 400px) {
+  #container {
+      margin: 0;
+      width: 100%;
+  }
 }
