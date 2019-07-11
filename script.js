@@ -83,7 +83,12 @@ emailAddress.addEventListener('click', function() {
     document.body.removeChild(textArea);
 });
 
-emailAddress.addEventListener('mouseout', function() {
+emailAddress.addEventListener('mouseenter', function() {
+    tooltiptext.style.visibility = "visible";
+});
+
+emailAddress.addEventListener('mouseleave', function() {
     tooltiptext.innerHTML = "Copy Email Address";    
+    tooltiptext.style.visibility = "hidden";
 });
 

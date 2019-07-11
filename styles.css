@@ -320,10 +320,6 @@ h4 {
   border-color: transparent transparent black transparent;
 }
 
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-
 .sliding-middle-out::after {
     content: "";
     display: block;
