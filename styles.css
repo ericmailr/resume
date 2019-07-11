@@ -127,6 +127,10 @@ nav ul li:hover {
 
 /* Main Content */
 
+#wrapper {
+    width: 100%;
+}
+
 #container {
     margin: 0 15%;
     margin-top: 130px;
@@ -344,13 +348,23 @@ h4 {
 }
 
 @media only screen and (max-width: 640px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
   #container {
       margin: 0;
       margin-top: 130px;
       align-items: space-between;
+      width: 100%;
   }
 
   nav {
       visibility: hidden;
+  }
+
+  #more-projects-container {
+    width: 100%;
   }
 }
