@@ -136,7 +136,7 @@ nav ul li:hover {
     align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   #container {
       margin: 0;
   }
