@@ -127,10 +127,6 @@ nav ul li:hover {
 
 /* Main Content */
 
-#wrapper {
-    width: 100%;
-}
-
 #container {
     margin: 0 15%;
     margin-top: 130px;
@@ -350,5 +346,11 @@ h4 {
 @media only screen and (max-width: 640px) {
   #container {
       margin: 0;
+      margin-top: 130px;
+      align-items: space-between;
+  }
+
+  nav {
+      visibility: hidden;
   }
 }
