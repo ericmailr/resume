@@ -127,6 +127,10 @@ nav ul li:hover {
 
 /* Main Content */
 
+#wrapper {
+    width: 100%;
+}
+
 #container {
     margin: 0 15%;
     margin-top: 130px;
@@ -136,9 +140,10 @@ nav ul li:hover {
     align-items: center;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 360px) {
   #container {
       margin: 0;
+      width: 100%;
   }
 }
 
