@@ -193,6 +193,8 @@ a:visited {
 .description-container > ul {
     font-family: 'Open Sans', 'Droid Sans', Arial, sans-serif;
     font-size: .85em;
+    width: 100%;
+    padding-left: 100px;
 }
 
 .description-container li {
@@ -214,6 +216,7 @@ img {
     justify-content: center;
     list-style: none;
     margin-top: 10px;
+    margin-left: -100px;
 }
 
 .tags > li {
@@ -225,6 +228,7 @@ img {
     border-radius: 8px;
     border-width: thin;
     background-color: rgba(10,10,240, .1);
+    white-space: nowrap;
 }
 
 #more-projects-container {
