@@ -26,7 +26,7 @@ body {
 
 @-moz-document url-prefix() {
     html, body {
-        font-size: 28px;
+        font-size: 27px;
     }
 }
 
@@ -94,6 +94,7 @@ nav ul {
     flex-direction: column;
     justify-content: space-around;
     align-items: stretch;
+    font-size: .9em;
     overflow: hidden;
 }
 
@@ -132,7 +133,7 @@ nav ul li:hover {
 }
 
 #container {
-    margin: 0 10%;
+    margin: 0 12%;
     margin-top: 130px;
     background-color: white;
     display: flex;
@@ -236,6 +237,7 @@ img {
     justify-content: space-around;
     align-items: flex-end;
     list-style: none;
+    white-space: nowrap;
 }
 
 #more-projects a {
@@ -287,6 +289,7 @@ h4 {
     align-items: center;
     margin-top: 50px;
     background-color: rgba(10,10,10,.05);
+    white-space: nowrap;
 }
 
 #email-address:hover {
