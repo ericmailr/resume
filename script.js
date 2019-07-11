@@ -6,10 +6,8 @@ wrapper.style.width = width + 'px';
 
 
 /* add .active class to section when scrolled to */
-var projectsContainer = document.getElementById('projects-container');
 var skillsContainer = document.getElementById('skills-container');
 var experienceContainer = document.getElementById('experience-container');
-var aboutContainer = document.getElementById('about-container');
 
 var navLinks = document.getElementsByClassName('nav-link');
 var projectsLink = navLinks[0].parentElement;
