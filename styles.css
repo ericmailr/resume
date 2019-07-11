@@ -1,4 +1,5 @@
 /* css reset */
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
     margin: 0;
     padding: 0;
@@ -9,15 +10,24 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     background: transparent;
 }
 
+
 html {
     height: 100%;
     font-family: Palatino, "Palatino Linotype", serif;
     overflow: auto;
+    font-size: 24px;
 }
 
 body {
     height: 100%;
     background-color: rgba(140, 170, 148,.5);
+    font-size: 24px;
+}
+
+@-moz-document url-prefix() {
+    html, body {
+        font-size: 28px;
+    }
 }
 
 a, a:link, a:visited {
@@ -285,7 +295,7 @@ h4 {
 
 .tooltiptext {
   visibility: hidden;
-  font-size: 14pt;
+  font-size: .9em;
   width: 200px;
   background-color: black;
   padding: 2px 5px;
