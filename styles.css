@@ -132,7 +132,7 @@ nav ul li:hover {
 }
 
 #container {
-    margin: 0 15%;
+    margin: 0 10%;
     margin-top: 130px;
     background-color: white;
     display: flex;
@@ -342,14 +342,17 @@ h4 {
 
 /* responsive to mobile */
 
-/*
 @viewport {
   width: device-width ;
   zoom: 1.0 ;
 }
-*/
 
 @media only screen and (max-width: 640px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
   #container {
       margin: 0;
       margin-top: 130px;
@@ -381,5 +384,8 @@ h4 {
     width: 100%;
     padding: 0;
     margin: 0;
+  }
+  #contact {
+    width: 100%;
   }
 }
