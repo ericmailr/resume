@@ -91,6 +91,7 @@ nav ul li {
     list-style: none;
     flex-grow: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.2em;
@@ -318,7 +319,7 @@ h4 {
     display: block;
     margin: auto;
     height: 2px;
-    width: 0px;
+    width: 0;
     background: transparent;
     transition: width .3s ease, background-color .3s ease;
 }
