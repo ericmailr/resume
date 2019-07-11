@@ -274,8 +274,8 @@ h4 {
 }
 
 #about-container {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 150px;
+    padding-right: 150px;
     line-height: 1.8em;
 }
 
@@ -345,11 +345,6 @@ h4 {
 
 /* responsive to mobile */
 
-@viewport {
-  width: device-width ;
-  zoom: 1.0 ;
-}
-
 @media only screen and (max-width: 640px) {
   html, body {
     margin: 0;
@@ -361,6 +356,7 @@ h4 {
       margin-top: 130px;
       align-items: space-between;
       width: 100%;
+      padding: 0 200px;
   }
 
   nav {
@@ -391,4 +387,9 @@ h4 {
   #contact {
     width: 100%;
   }
+}
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
 }
