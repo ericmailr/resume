@@ -386,6 +386,9 @@ h4 {
   #more-projects-container {
     width: 100%;
   }
+  #more-projects-container li {
+    width: auto;
+  }
   #more-projects {
     width: 100%;
   }
