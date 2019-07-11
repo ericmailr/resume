@@ -203,8 +203,8 @@ a:visited {
 
 img {
     /* make img's shrink with window size */
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; 
+/*    height: auto; */
     width: auto\9; /* ie8 */
     /**/
     box-shadow: 4px 3px 8px;
