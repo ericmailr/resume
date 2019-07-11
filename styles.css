@@ -300,8 +300,8 @@ h4 {
 
 .tooltiptext {
   visibility: hidden;
-  font-size: .9em;
-  width: 200px;
+  font-size: .85em;
+  width: 220px;
   background-color: black;
   padding: 2px 5px;
   color: white;
@@ -347,7 +347,7 @@ h4 {
   zoom: 1.0 ;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 640px) {
   #container {
       margin: 0;
   }
