@@ -247,6 +247,10 @@ img {
     white-space: nowrap;
 }
 
+#more-projects-container img {
+    height: 250px;
+}
+
 #more-projects a {
     display: flex;
     justify-content: center;
