@@ -136,6 +136,11 @@ nav ul li:hover {
     align-items: center;
 }
 
+@media only screen and (max-width: 600px) {
+  #container {
+      margin: 0;
+  }
+}
 
 /* added so navigation anchor isn't covered by header */
 .section-container {
