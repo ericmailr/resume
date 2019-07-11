@@ -216,6 +216,9 @@ img {
     justify-content: center;
     list-style: none;
     margin-top: 10px;
+}
+
+.description-container .tags {
     margin-left: -100px;
 }
 
@@ -395,5 +398,4 @@ h4 {
 
 @viewport {
   width: device-width ;
-  zoom: 1.0 ;
 }
