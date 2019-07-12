@@ -13,6 +13,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 html {
     height: 100%;
+    width: 100%;
     font-family: Palatino, "Palatino Linotype", serif;
     overflow: auto;
     font-size: 24px;
@@ -20,6 +21,7 @@ html {
 
 body {
     height: 100%;
+    width: 100%;
     background-color: rgba(140, 170, 148,.5);
     font-size: 24px;
 }
@@ -88,7 +90,7 @@ nav ul {
     position: fixed;
     top: 25%;
     left: 1%;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.8);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -117,7 +119,7 @@ nav ul li:hover {
 }
 
 .active {
-    background-color: rgba(0,0,0,.9);
+    background-color: rgba(0,0,0,.98);
 }
 
 .nav-link, .nav-link:link, .nav-link:visited {
@@ -137,8 +139,8 @@ nav ul li:hover {
 }
 
 #container {
-    margin: 0 10%;
-    width: 80%;
+    margin: 0 auto;
+    width: 75%;
     margin-top: 130px;
     background-color: white;
     display: flex;
