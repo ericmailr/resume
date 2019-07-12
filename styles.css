@@ -101,16 +101,15 @@ nav ul {
 nav ul li {
     list-style: none;
     flex-grow: 1;
+    /* for safari (attempt to fix bug where link doesn't fill li) */
+    height: 100%;
+    width: 100%;
+    /**/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.2em;
-}
-
-/** attempt to make entire li clickable in safari **/
-nav ul li a {
-    display: block;
 }
 
 nav ul li:hover {
@@ -263,7 +262,7 @@ img {
     margin: 10px;
 }
 
-#more-projects li {
+#more-projects > li {
     width: 25%;
 }
 
