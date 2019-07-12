@@ -94,7 +94,7 @@ nav ul {
     flex-direction: column;
     justify-content: space-around;
     align-items: stretch;
-    font-size: .9em;
+    font-size: .85em;
     overflow: hidden;
 }
 
