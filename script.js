@@ -30,7 +30,7 @@ const updateNavLinks = () => {
         addActiveClass(skillsLink);
     }
 
-    if (windowTop + 300 >= experienceContainer.offsetTop) {
+    if (windowTop + 400 >= experienceContainer.offsetTop) {
         addActiveClass(experienceLink);
     }
 

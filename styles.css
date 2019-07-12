@@ -108,6 +108,11 @@ nav ul li {
     font-size: 1.2em;
 }
 
+/** attempt to make entire li clickable in safari **/
+nav ul li a {
+    display: block;
+}
+
 nav ul li:hover {
     background-color: rgba(0,0,0,.7)
 }
@@ -287,6 +292,45 @@ h4 {
 .skills > li {
     display: list-item;
     margin: 5px 80px;
+}
+
+#experience-container > div {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#job-list {
+    list-style: none;
+    width: 100%;
+}
+
+#job-list > li {
+    margin-bottom: 60px;
+}
+
+#job-list li div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.locations-worked {
+    font-size: 1.2em;
+}
+
+#job-list h3 {
+    text-align: left;
+    font-size: 1.3em;
+    padding: 0;
+    margin: 0;
+}
+
+.duties-list {
+    margin-left: 20px;
+}
+
+.duties-list > li {
+    margin: 15px 0;
 }
 
 #about-container {

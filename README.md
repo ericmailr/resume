@@ -6,6 +6,4 @@ Todo: Underline extra project link when hovering over extra project image
 
 safari nav links only select over text
 
-not "fake"
-
 resize content for smaller window
