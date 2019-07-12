@@ -137,15 +137,14 @@ nav ul li:hover {
 }
 
 #container {
-    margin: 0 12%;
+    margin: 0 10%;
+    width: 80%;
     margin-top: 130px;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-
 
 /* added so navigation anchor isn't covered by header */
 .section-container {
@@ -267,7 +266,7 @@ img {
 }
 
 #more-projects .github-link i {
-    margin-right: 5px;
+    margin: auto 5px;
 }
 
 
@@ -302,6 +301,7 @@ h4 {
 #job-list {
     list-style: none;
     width: 100%;
+    font-size: .9em;
 }
 
 #job-list > li {
