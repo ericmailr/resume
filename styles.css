@@ -401,7 +401,7 @@ h4 {
 }
 
 /* responsive to mobile */
-/**
+
 @media only screen and (max-width: 640px) {
   html, body {
     margin: 0;
@@ -448,8 +448,6 @@ h4 {
     width: 100%;
   }
 }
-
-**/
 
 @viewport {
   width: device-width ;
