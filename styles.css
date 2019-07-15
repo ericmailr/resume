@@ -14,17 +14,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 html {
     font-family: Palatino, "Palatino Linotype", serif;
     overflow: auto;
-    font-size: 24px;
+    font-size: 1vw;
 }
 
 body {
     background-color: rgba(140, 170, 148,.5);
-    font-size: 24px;
+    font-size: 1vw;
 }
 
 @-moz-document url-prefix() {
     html, body {
-        font-size: 25px;
+        font-size: 1vw;
     }
 }
 
@@ -62,7 +62,7 @@ h1 {
     font-weight: normal;
     line-height: 100px;
     padding: 15px;
-    font-size: 2em;
+    font-size: 2vw;
     text-align: center;
     background-color: rgba(0,0,0,.9);
     color: white;
@@ -70,14 +70,14 @@ h1 {
 
 h2 {
     font-weight: normal;
-    font-size: 2em;
+    font-size: 2vw;
 }
 
 h3 {
     text-align: center;
     margin: 15px;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.3vw;
 }
 
 /* Navigation Bar */
@@ -92,7 +92,7 @@ nav ul {
     flex-direction: column;
     justify-content: space-around;
     align-items: stretch;
-    font-size: .85em;
+    font-size: .85vw;
     overflow: hidden;
 }
 
@@ -107,7 +107,7 @@ nav ul li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.2em;
+    font-size: 1.2vw;
 }
 
 nav ul li:hover {
@@ -132,8 +132,8 @@ nav ul li:hover {
 
 #container {
     margin: 0 auto;
-    width: 75%;
     margin-top: 130px;
+    width: 75%;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -180,7 +180,7 @@ nav ul li:hover {
 }
 
 .github-link {
-    font-size: .8em;
+    font-size: .8vw;
 }
 
 a:visited {
@@ -189,7 +189,7 @@ a:visited {
 
 .description-container > ul {
     font-family: 'Open Sans', 'Droid Sans', Arial, sans-serif;
-    font-size: .85em;
+    font-size: .85vw;
     width: 100%;
     padding-left: 100px;
 }
@@ -220,7 +220,7 @@ img {
     margin: 0 4px;
     margin-top: inherit;
     padding: 4px;
-    font-size: .8em;
+    font-size: .8vw;
     border: solid;
     border-radius: 8px;
     border-width: thin;
@@ -292,7 +292,7 @@ h4 {
 #job-list {
     list-style: none;
     width: 100%;
-    font-size: .9em;
+    font-size: .9vw;
 }
 
 #job-list > li {
@@ -305,12 +305,12 @@ h4 {
 }
 
 .locations-worked {
-    font-size: 1.2em;
+    font-size: 1.2vw;
 }
 
 #job-list h3 {
     text-align: left;
-    font-size: 1.3em;
+    font-size: 1.3vw;
     padding: 0;
     margin: 0;
 }
@@ -353,7 +353,7 @@ h4 {
 
 .tooltiptext {
   visibility: hidden;
-  font-size: .85em;
+  font-size: .85vw;
   width: 220px;
   background-color: black;
   padding: 2px 5px;
