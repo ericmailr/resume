@@ -403,6 +403,11 @@ h4 {
 /* responsive to mobile */
 
 
+@media only screen and (max-width: 160px) {
+    nav {
+        display: none;
+    }
+}
 
 @viewport {
   width: device-width ;
