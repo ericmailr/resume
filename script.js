@@ -1,9 +1,3 @@
-/* make contents adaptable to window width */
-const wrapper = document.getElementById('wrapper');
-var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-width = width - 20;
-wrapper.style.width = width + 'px';
-
 
 /* add .active class to section when scrolled to */
 var skillsContainer = document.getElementById('skills-container');

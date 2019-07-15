@@ -131,6 +131,8 @@ nav ul li:hover {
 /* Main Content */
 
 #wrapper {
+    width: 100%;
+    margin: 0 auto;
 }
 
 #container {
@@ -409,4 +411,5 @@ h4 {
 }
 
 @viewport {
+    width: device-width;
 }
