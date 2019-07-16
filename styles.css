@@ -214,9 +214,6 @@ img {
     margin-top: 10px;
 }
 
-.description-container .tags {
-}
-
 .tags > li {
     margin: 0 4px;
     margin-top: inherit;
@@ -244,7 +241,7 @@ img {
 
 #more-projects-container img {
     height: 250px;
-    width: 250px;
+    max-width: 250px;
 }
 
 #more-projects a {
@@ -325,8 +322,8 @@ h4 {
 }
 
 #about-container {
-    padding-left: 150px;
-    padding-right: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
     line-height: 1.8em;
 }
 
