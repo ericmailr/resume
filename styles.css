@@ -140,6 +140,7 @@ nav ul li:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 /* added so navigation anchor isn't covered by header */
@@ -403,7 +404,6 @@ h4 {
 
   #container {
       margin-top: 130px;
-      align-items: space-between;
       width: 100%;
   }
 
@@ -411,7 +411,7 @@ h4 {
       visibility: hidden;
   }
 
-  li, p {
+  li, p, h1, h2, h3, h4 {
     font-size: 12pt !important;
   }
 
