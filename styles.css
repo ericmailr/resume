@@ -13,13 +13,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 html {
     font-family: Palatino, "Palatino Linotype", serif;
-    overflow: auto;
     font-size: 1vw;
+    width: 100%;
+    overflow: auto;
 }
 
 body {
     background-color: rgba(140, 170, 148,.5);
     font-size: 1vw;
+    width: 100%;
 }
 
 @-moz-document url-prefix() {
@@ -167,7 +169,6 @@ nav ul li:hover {
     margin: 50px;
     display: flex;
     justify-content: center;
-    min-width: 200px;
 }
 
 .description-container {
@@ -201,7 +202,7 @@ a:visited {
 
 img {
     max-width: 100%; 
-    min-width: 200px;
+    min-width: 150px;
     height: auto; 
     box-shadow: 4px 3px 8px;
     color: gray;
