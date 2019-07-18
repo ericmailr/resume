@@ -179,6 +179,7 @@ nav ul li:hover {
     align-items: center;
     align-self: flex-start;
     width: 40%;
+    max-width: 40%;
 }
 
 .github-link {
