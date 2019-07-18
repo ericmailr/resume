@@ -94,7 +94,6 @@ nav ul {
     flex-direction: column;
     justify-content: space-around;
     align-items: stretch;
-    font-size: .85vw;
     overflow: hidden;
 }
 
@@ -117,7 +116,7 @@ nav ul li:hover {
 }
 
 .active {
-    background-color: rgba(0,0,0,.98);
+    background-color: rgba(0,0,0,1);
 }
 
 .nav-link, .nav-link:link, .nav-link:visited {
@@ -164,9 +163,16 @@ nav ul li:hover {
     border-bottom: dotted;
 }
 
+img {
+    max-width: 100%; 
+    height: auto; 
+    box-shadow: 4px 3px 8px;
+    color: gray;
+}
+
 .img-container {
-    margin: 50px;
     display: flex;
+    margin: 30px 0;
     justify-content: center;
     width: 40%;
 }
@@ -199,20 +205,13 @@ a:visited {
     margin: 10px 0;
 }
 
-img {
-    max-width: 100%; 
-    min-width: 150px;
-    height: auto; 
-    box-shadow: 4px 3px 8px;
-    color: gray;
-}
-
 .tags {
     display: flex;
     justify-content: center;
     list-style: none;
     margin-top: 10px;
     max-width: 100%;
+    flex-wrap: wrap;
 }
 
 .tags > li {
@@ -242,7 +241,6 @@ img {
 
 #more-projects-container img {
     height: 250px;
-    max-width: 250px;
 }
 
 #more-projects a {
@@ -252,7 +250,7 @@ img {
 }
 
 #more-projects > li {
-    width: 25%;
+    width: 24%;
 }
 
 #more-projects .github-link i {
@@ -309,7 +307,6 @@ h4 {
 
 #job-list h3 {
     text-align: left;
-    font-size: 1.3vw;
     padding: 0;
     margin: 0;
 }
@@ -322,10 +319,10 @@ h4 {
     margin: 15px 0;
 }
 
-#about-container {
-    margin-left: 150px;
-    margin-right: 150px;
+#about-container > p {
+    width: 80%; 
     line-height: 1.8em;
+    margin: auto;
 }
 
 #about-container a:hover {
@@ -355,7 +352,7 @@ h4 {
   font-size: .85vw;
   width: 220px;
   background-color: black;
-  padding: 2px 5px;
+  padding: 5px 5px;
   color: white;
   text-align: center;
   border-radius: 7px;
@@ -363,6 +360,7 @@ h4 {
   top: 100%;
   left: 50%;
   margin-left: -100px;
+  margin-top: 5px;
   z-index: 1;
 }
 
@@ -400,15 +398,71 @@ h4 {
   #container {
       margin-top: 130px;
       width: 100%;
+      overflow-x: hidden;
   }
 
-  nav {
+  .projects {
+    flex-direction: column;  
+  }
+
+  .img-container {
+    width: auto;
+    margin-bottom: -40px;
+  }
+
+  .description-container {
+      width: auto;
+  }
+
+  #more-projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #more-projects li {
+    margin-bottom: 20px;
+  }
+
+  #more-projects img {
+    max-width: 250px;
+  }
+  
+  nav ul {
       visibility: hidden;
   }
 
-  li, p, h1, h2, h3, h4 {
-/*    font-size: 12pt !important; */
+  /* font sizes */
+
+  h1, h2 {
+    font-size: 32px;
   }
+
+  h3, h4 {
+    font-size: 18px;
+  }
+
+  .github-link {
+    font-size: 16px;
+  }
+
+  .description-container > ul {
+    font-size: 16px;
+  }
+
+  .tags > li {
+    font-size: 10px;
+
+  }
+
+  p, li, a, span, .locations-worked {
+    font-size: 12pt;
+  }
+
+  #contact {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
 
 }
 
@@ -420,6 +474,63 @@ h4 {
         margin-left: 150px;
         margin-right: 150px;
     }
+  
+  #more-projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #more-projects li {
+    margin-bottom: 20px;
+  }
+
+  #more-projects img {
+    max-width: 250px;
+  }
+
+  nav ul {
+    flex-direction: row; 
+    height: 30px;
+    width: 60%;
+    top: 150px;
+    left: 20%;
+  }
+
+  nav ul li {
+    white-space: nowrap;
+  }
+
+  /* font sizes */
+  h1, h2 {
+    font-size: 32px;
+  }
+
+  h3, h4 {
+    font-size: 18px;
+  }
+
+  .github-link {
+    font-size: 16px;
+  }
+
+  .description-container > ul {
+    font-size: 16px;
+  }
+
+  .tags > li {
+    font-size: 10px;
+
+  }
+
+  p, li, a, span, .locations-worked {
+    font-size: 12pt;
+  }
+
+  .tooltiptext {
+    font-size: 12pt;
+  }
+
+
 }
 
 @viewport {
