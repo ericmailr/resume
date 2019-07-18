@@ -13,7 +13,7 @@ var emailAddress = document.getElementById('email-address');
 
 var tooltiptext = document.getElementsByClassName('tooltiptext')[0];
 
-var updateNavLinks = () => {
+const updateNavLinks = function() {
     var windowTop = document.documentElement.scrollTop || document.body.scrollTop;
     var windowHeight = window.innerHeight;
     var docHeight = Math.max( document.body.scrollHeigh || document.documentElement.scrollHeight );
@@ -34,7 +34,7 @@ var updateNavLinks = () => {
 
 };
 
-var addActiveClass = (activeClass) => {
+const addActiveClass = function(activeClass) {
     activeClass.classList.add('active');
     if (projectsLink != activeClass) {
         projectsLink.classList.remove('active');
