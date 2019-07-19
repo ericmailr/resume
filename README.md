@@ -2,8 +2,4 @@ Eric Miller
 
 Resume Website. View here: https://ericmailr.github.io/resume/
 
-Todo: Underline extra project link when hovering over extra project image
-
-safari nav links only select over text
-
-resize content for smaller window
+Responsive, static webpage displaying my resume info and the projects I've been working on.
