@@ -233,10 +233,9 @@ a:visited {
 
 #more-projects {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+    justify-content: flex-start;
     list-style: none;
-    white-space: nowrap;
+    flex-wrap: wrap;
 }
 
 #more-projects-container img {
@@ -251,12 +250,17 @@ a:visited {
 
 #more-projects > li {
     width: 24%;
+    margin-bottom: 30px;
 }
 
 #more-projects .github-link i {
     margin: auto 5px;
 }
 
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
 
 h4 {
     margin-top: 10px;
