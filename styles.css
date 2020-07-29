@@ -59,16 +59,19 @@ a, a:link, a:visited {
 
 h1 {
     position: fixed;
-    background-color: #6B7A8F;
+    background-color: white;
     top: 0;
     left: 0;
     width: 100%;
     font-weight: normal;
-    line-height: 100px;
+    line-height: 40px;
     padding: 15px;
     font-size: 2vw;
     text-align: center;
-    color: white;
+    color: black;
+    border-bottom: dotted;
+    border-width: thin;
+
 }
 
 h2 {
@@ -86,10 +89,10 @@ h3 {
 /* Navigation Bar */
 nav ul {
     height: 400px;
-    width: 200px;
+    width: 150px;
     position: fixed;
     top: 25%;
-    left: 1%;
+    left: 0;
     background-color: #6B7A8F;
     border-radius: 10px;
     display: flex;
@@ -110,7 +113,7 @@ nav ul li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     color: white;
     color: (225,228,232);
 }
@@ -137,7 +140,7 @@ nav ul li:hover {
 #container {
     margin: 0 auto;
     margin-top: 130px;
-    width: 75%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,6 +154,7 @@ nav ul li:hover {
 
 #projects-container {
     width: 100%;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -184,7 +188,7 @@ img:hover {
 }
 
 .description-container {
-    padding: 60px 30px 30px 30px;
+    padding: 30px 0px 30px 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -203,8 +207,8 @@ a:visited {
 
 .description-container > ul {
     font-family: 'Open Sans', 'Droid Sans', Arial, sans-serif;
-    font-size: .85vw;
-    width: 100%;
+    font-size: 1.3vw;
+    width: 130%;
 }
 
 .description-container li {
@@ -301,7 +305,7 @@ h4 {
 #job-list {
     list-style: none;
     width: 100%;
-    font-size: .9vw;
+    font-size: 1.2vw;
 }
 
 #job-list > li {
