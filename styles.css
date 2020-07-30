@@ -154,7 +154,6 @@ nav ul li:hover {
 
 #projects-container {
     width: 100%;
-    margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
