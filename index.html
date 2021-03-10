@@ -1,258 +1,273 @@
 <!DOCTYPE html>
- <html lang="en">
-    <head>
-       <link href="styles.css" rel="stylesheet">
-       <script src="https://kit.fontawesome.com/e782585afd.js"></script>
-       <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-       <script> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
-       <meta charset="utf-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <title>Eric Miller - Resume</title>
-    </head>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <body>
-        <h1 class="headings">ERIC MILLER</h1>
-        <nav class="navbar"> 
-            <ul>
-                <li><a class="nav-link" href="#projects-container">Projects</a></li>
-                <li><a class="nav-link" href="#skills-container">Skills</a></li>
-                <li><a class="nav-link" href="#experience-container">Experience</a></li>
-                <li><a class="nav-link" href="#about-container">About Me</a></li>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+
+    <title>Eric Miller - Web Developer</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-custom navbar-text">
+        <div class="container-fluid justify-content-center">
+          <div id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item mx-3">
+                <a
+                  class="nav-link active navbar-text"
+                  aria-current="page"
+                  href="#projects"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item mx-3">
+                <a
+                  class="nav-link navbar-text"
+                  href="./assets/EricMillerResume.pdf"
+                  >Resume</a
+                >
+              </li>
+              <li class="nav-item mx-3">
+                <a
+                  class="nav-link navbar-text"
+                  href="https://github.com/ericmailr"
+                  >GitHub</a
+                >
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link navbar-text" href="#contact">Contact</a>
+              </li>
             </ul>
-        </nav>
-        <div id="container">
-            <div class="sections">
-                <h2 class="headings main-headings">Projects</h2>
-                <div class="section-container" id="projects-container">
-                    <div class="projects">
-                        <div class="description-container">
-                            <h3 class="headings sliding-middle-out"><a href="https://ericmailr.github.io/todo-list/">Todo List</a></h3>
-                            <a class="github-link" href="https://github.com/ericmailr/todo-list"><i class="fab fa-github"></i> github</a>
-                            <br>
-                            <ul>
-                                <li>Todo List application implemented with Javascript.</li>
-                                <li>Specify due dates, descriptions, and priority levels.</li> 
-                                <li>Delete completed tasks.</li> 
-                                <li>Add and save separate lists to your browser.</li>
-                            </ul>
-                            <ul class="tags">
-                                <li>javascript</li>
-                                <li>localStorage</li>
-                                <li>webpack</li>
-                            </ul>
-                        </div>
-                        <div class="img-container">
-                            <a href="https://ericmailr.github.io/todo-list/"><img src="assets/todo.png" alt="Todo List" height="350" width="640"></a>
-                        </div>
-                    </div>
-
-                    <div class="projects">
-                        <div class="description-container">
-                            <h3 class="headings sliding-middle-out"><a href="https://morning-island-74563.herokuapp.com/">Facebook Demo</a></h3>
-                            <a class="github-link" href="https://github.com/ericmailr/odin-facebook"><i class="fab fa-github"></i> github</a>
-                            <br>
-                            <ul>
-                                <li>Bare-bones social media app modeled after Facebook and implemented with Ruby on Rails.</li>
-                                <li>Sign up with your email or connect with your Facebook account.</li> 
-                                <li>Post text statuses and comments.</li> 
-                                <li>Send and confirm friend requests.</li>
-                                <li>View a status feed containing posts from your friends.</li>
-                            </ul>
-                            <ul class="tags">
-                                <li>Ruby on Rails</li>
-                                <li>Active Record</li>
-                                <li>omniauth</li>
-                                <li>Devise</li>
-                                <li>letter-opener</li>
-                            </ul>
-                        </div>
-                        <div class="img-container">
-                            <a href="https://morning-island-74563.herokuapp.com/"><img src="assets/facebook.png" alt="Facebook Demo" height="500" width="392"></a>
-                        </div>
-                    </div>
-
-                    <div class="projects">
-                        <div class="description-container">
-                            <h3 class="headings sliding-middle-out"><a href="https://limitless-peak-88659.herokuapp.com/">Flight Booker Demo</a></h3>
-                            <a class="github-link" href="https://github.com/ericmailr/odin-flight-booker"><i class="fab fa-github"></i> github</a>
-                            <br>
-                            <ul>
-                                <li>One-way flight booker demo implemented with Ruby on Rails.</li>
-                                <li>Dropdown form search.</li> 
-                                <li>Pick a flight and submit info for booking.</li> 
-                            </ul>
-                            <ul class="tags">
-                                <li>Ruby on Rails</li>
-                                <li>Active Record</li>
-                                <li>forms</li>
-                            </ul>
-                        </div>
-                        <div class="img-container">
-                            <a href="https://limitless-peak-88659.herokuapp.com/"><img src="assets/flight-booker.png" alt="Flight Booker" height="500" width="392"></a>
-                        </div>
-                    </div>
-
-                    <div id="more-projects-container">
-                        <ul id="more-projects">
-                            <li>
-                                <div>
-                                    <a href="https://ericmailr.github.io/etchsketch/"><img src="assets/etchasketch.png" alt="etchsketch app" height="250" width="250"></a>
-                                    <a href="https://ericmailr.github.io/etchsketch/"><h4 class="headings"><span class= "sliding-middle-out" > Etch-a-Sketch </span></h4></a>
-                                    <a class="github-link" href="https://github.com/ericmailr/etchsketch"><i class="fab fa-github"></i> github</a>
-                                    <ul class="tags">
-                                        <li>Javascript</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <a href="https://ericmailr.github.io/tic-tac-toe/"><img src="assets/tictactoe.png" alt="tic-tac-toe app" height="250" width="250"></a>
-                                    <a href="https://ericmailr.github.io/tic-tac-toe/"><h4 class="headings"><span class= "sliding-middle-out"> Tic-Tac-Toe </span></h4></a>
-                                    <a class="github-link" href="https://github.com/ericmailr/tic-tac-toe"><i class="fab fa-github"></i> github</a>
-                                    <ul class="tags">
-                                        <li>Javascript</li>
-                                    </ul>
-
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <a href="https://github.com/ericmailr/ruby_final_project"><img src="assets/chess.png" alt="chess app" height="250" width="250"></a>
-                                    <a href="https://github.com/ericmailr/ruby_final_project"><h4 class="headings"><span class="sliding-middle-out"> Command Line Chess </span></h4></a>
-                                    <a class="github-link" href="https://github.com/ericmailr/ruby_final_project"><i class="fab fa-github"></i> github</a>
-                                    <ul class="tags">
-                                        <li>Ruby</li>
-                                        <li>RSpec</li>
-                                    </ul>
-
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <a href="https://github.com/ericmailr/Minewalker"><img src="assets/Minewalker.png" alt="Minewalker app" height="250" width="250"></a>
-                                    <a href="https://github.com/ericmailr/Minewalker"><h4 class="headings"><span class="sliding-middle-out">  Minewalker </span></h4></a>
-                                    <a class="github-link" href="https://github.com/ericmailr/Minewalker"><i class="fab fa-github"></i> github</a>
-                                    <ul class="tags">
-                                        <li>Java</li>
-                                    </ul>
-
-                                </div>
-                            </li>
-                            <li class="break"></li>
-                            <li>
-                                <div>
-                                    <a href="https://ericmailr.github.io/weather-app/"><img src="assets/weather.png" alt="Weather app" height="250" width="250"></a>
-                                    <a href="https://ericmailr.github.io/weather-app/"><h4 class="headings"><span class="sliding-middle-out">  Weather App </span></h4></a>
-                                    <a class="github-link" href="https://github.com/ericmailr/weather-app"><i class="fab fa-github"></i> github</a>
-                                    <ul class="tags">
-                                        <li>Javascript</li>
-                                        <li>API</li>
-                                        <li>Async/Await</li>
-                                    </ul>
-
-                                </div>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="sections alternate-sections">
-                <h2 class="headings main-headings">Skills</h2>
-                <div class="section-container" id="skills-container">
-                    <ul class="skills">
-                        <li>Object-Oriented Programming</li>
-                        <li>MVC Programming</li>
-                        <li>Front-end</li>
-                        <li>Back-end</li>
-                        <li>Java</li>
-                        <li>Ruby</li>
-                        <li>Ruby on Rails</li>
-                        <li>Javascript</li>
-                        <li>HTML(5)</li>
-                        <li>CSS(3)</li>
-                    </ul>
-                    <ul class="skills">
-                        <li>Flexbox</li>
-                        <li>SQL</li>
-                        <li>RSpec Testing</li>
-                        <li>Linux</li>
-                        <li>Git</li>
-                        <li>Vim</li>
-                        <li>Matlab</li>
-                        <li>Numerical Analysis</li>
-                        <li>MS Office</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="sections">
-                <h2 class="headings main-headings">Experience</h2>
-                <div class="section-container" id="experience-container">
-                    <div>
-                    <ul id="job-list">
-                       <li>
-                            <div>
-                                <h3> CaptionCall </h3><span class="locations-worked"><i>Meridian, ID</i></span> 
-                            </div>
-                            <div>
-                                <h4> Communications Agent </h4> <span><i>Feb 2013 - Present</i></span>
-                            </div>
-                            <ul class="duties-list">
-                                <li>Operate telecommunications software and submit bug reports for technical issues.</li> 
-                                <li>Render verbatim transcriptions of telephone conversations in real time for individuals who are hard of hearing.</li> 
-                                <li>Provide management with constructive feedback regarding ways to improve software functionality and captioning quality.</li> 
-                                <li>Maintained one of the top 10 highest average call accuracy scores company-wide (more than 3,000 Agents) over the<br> period of a quarter.</li> 
-                            </ul>
-                        </li>
-                        <li>
-                            <div>
-                                <h3> Private Math Tutor </h3><span class="locations-worked"><i>Treasure Valley, ID</i></span> 
-                            </div>
-                            <div>
-                                <h4> Tutor </h4> <span><i>Sept 2018 - Aug 2019</i></span>
-                            </div>
-                            <ul class="duties-list">
-                                <li>Improved students’ comprehension of concepts ranging from arithmetic to calculus and differential equations.</li> 
-                                <li>Prepared individual-specific quizzes and lesson plans that identified and corrected errors in mathematical reasoning.</li> 
-                                <li>Collaborated with parents on ways to cater to a variety of learning styles and behavioral needs.</li> 
-                                <li>Raised student math scores by as much as 3 letter grades.</li> 
-                            </ul>
-                        </li>
-                        <li>
-                            <div>
-                                <h3> Gandolfo's Delicatessen </h3><span class="locations-worked"><i>Meridian, ID</i></span> 
-                            </div>
-                            <div>
-                                <h4> Shift Leader </h4> <span><i>Apr 2010 - Apr 2012</i></span>
-                            </div>
-                            <ul class="duties-list">
-                                <li>Managed and trained employees.</li>
-                                <li>Completed daily cash audit spreadsheet and balanced tills.</li>
-                                <li>Provided efficient and friendly customer service in a fast-paced environment.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="sections alternate-sections">
-                <h2 class="headings main-headings">About Me</h2>
-                <div class="section-container" id="about-container">
-                    <p>
-                        I graduated from Boise State University with a B.S. in Applied Mathematics. Through my coursework, I quickly found that I enjoyed the challenges involved in coding quite a lot. I was able to complete a minor in Computer Science, supplemented with several extra programming electives that I found thoroughly enjoyable. Programming combines the structure, logic, and problem-solving that I love about math with the skills and tools I need to produce meaningful, practical applications. For the past two years I have spent my free time learning specifically about web development using online resources like <a href="https://www.theodinproject.com">The Odin Project</a> and <a href="https://www.pluralsight.com">Pluralsight</a>. My long-term goal is to become a full-stack web developer.
-                    </p>
-                    <div id="contact">
-                        <a href="assets/resume.pdf" download><i class="fas fa-download"></i>  Printable Resume</a> 
-                        <div id="email-address" class="tooltip"><i class="fas fa-envelope"></i><span> ericmailr@gmail.com <span class="tooltiptext">Copy Email Address</span></span></div> 
-                        <p><i class="fa fa-phone fa-flip-horizontal"></i>  (208) 409-6412</p> 
-                        <a href="https://github.com/ericmailr"><i class="fab fa-github"></i> github</a>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
-        <script src="script.js"></script>
-    </body>
+      </nav>
+    </div>
+    <div class="container d-flex justify-content-center mb-5 mt-3">
+      <h1 id="name">ERIC MILLER</h1>
+    </div>
+    <div class="container-fluid d-flex flex-column align-items-center my-5">
+      <div
+        class="d-flex flex-column align-items-center skills-container middle-container"
+      >
+        <h3 class="section-heading">
+          <i class="bi bi-chevron-compact-right"></i>
+          What I Can Do
+        </h3>
+        <ul class="skills fa-ul">
+          <li class="mt-2">
+            <span class="fa-li"><i class="bi bi-caret-right-fill"></i></span>
+            Deploy websites built via
+            <strong>Model-View-Controller Programming</strong> using the
+            <strong>Ruby on Rails Framework</strong>
+          </li>
+          <li class="mt-2">
+            <span class="fa-li"><i class="bi bi-caret-right-fill"></i></span>
+            Design interactive UIs with efficient, encapsulated components using
+            the <strong>React Javascript</strong> library
+          </li>
+          <li class="mt-2">
+            <span class="fa-li"><i class="bi bi-caret-right-fill"></i></span>
+            Use web development languages and tools like
+            <strong>HTML, CSS, Bootstrap,</strong> and
+            <strong>Webpack</strong>
+          </li>
+          <li class="mt-2">
+            <span class="fa-li"><i class="bi bi-caret-right-fill"></i></span>
+            Develop applications using
+            <strong>Object-Oriented Programming</strong> languages like
+            <strong>Ruby</strong> or <strong>Java</strong>
+          </li>
+          <li class="mt-2">
+            <span class="fa-li"><i class="bi bi-caret-right-fill"></i></span>
+            Practice <strong>Test/Behavior-Driven-Development</strong> by
+            designing test suites with <strong>RSpec</strong>
+          </li>
+          <li class="mt-2">
+            <span class="fa-li"><i class="bi bi-caret-right-fill"></i></span>
+            Manage projects and write code with tools like
+            <strong>Git Version Control, Linux, VSCode,</strong>
+            and <strong>Vim</strong>
+          </li>
+          <li class="mt-2">
+            <span class="fa-li"><i class="bi bi-caret-right-fill"></i></span>
+            Interpret data and crunch numbers using <strong>Matlab</strong>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="projects" class="container d-flex flex-column align-items-center">
+      <div
+        class="container d-flex flex-column align-items-center middle-container"
+      >
+        <h3 class="section-heading">
+          <i class="bi bi-chevron-compact-right"></i>
+          Projects
+        </h3>
+      </div>
+      <div
+        class="container d-flex flex-column align-items-center projects-container middle-container"
+      >
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4 w-75 d-flex align-items-center">
+              <a href="https://twitter-clone-ericmiller.herokuapp.com/">
+                <img
+                  src="./assets/twitter.png"
+                  alt="twitter webpage screenshot"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-md-8 w-25">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="https://twitter-clone-ericmiller.herokuapp.com/"
+                    >Twitter Clone</a
+                  >
+                </h5>
+                <p class="card-text">
+                  <small class="text-muted"
+                    ><a href="https://github.com/ericmailr/twitter"
+                      ><i class="bi bi-github"></i> GitHub</a
+                    ></small
+                  >
+                </p>
+                <p class="card-text">Built with Ruby on Rails and React.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card my-4">
+          <div class="row g-0">
+            <div class="col-md-4 w-75 d-flex align-items-center">
+              <a href="https://ericmailr.github.io/todo-list/">
+                <img
+                  src="./assets/todo.png"
+                  alt="todo list webpage screenshot"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-md-8 w-25">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="https://ericmailr.github.io/todo-list/">Todo List</a>
+                </h5>
+                <p class="card-text">
+                  <small class="text-muted"
+                    ><a href="https://github.com/ericmailr/todo-list"
+                      ><i class="bi bi-github"></i> GitHub</a
+                    ></small
+                  >
+                </p>
+
+                <p class="card-text">Built with pure vanilla Javascript.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container my-4 d-flex justify-content-between middle-container projects-container"
+      >
+        <div class="card" style="width: 20rem; height: 25rem">
+          <img
+            src="./assets/weather.png"
+            class="card-img-top"
+            alt="weather app screenshot"
+            height="65%"
+          />
+          <div class="card-body" style="height: 35%">
+            <h5 class="card-title">
+              <a href="https://ericmailr.github.io/weather-app/"
+                ><i class="bi bi-arrow-right-circle"></i> Weather App</a
+              >
+            </h5>
+            <a href="https://github.com/ericmailr/weather-app"
+              ><i class="bi bi-github"></i> GitHub</a
+            >
+            <p class="card-text">
+              Javascript app that fetches data from a Weather API.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem; height: 25rem">
+          <img
+            src="./assets/chess.png"
+            class="card-img-top"
+            alt="chess"
+            height="65%"
+          />
+          <div class="card-body" style="height: 35%">
+            <h5 class="card-title">
+              <a href="https://github.com/ericmailr/ruby_final_project">
+                <i class="bi bi-github"></i> Command Line Chess</a
+              >
+            </h5>
+            <p class="card-text">Written in Ruby. Tested with RSpec!</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem; height: 25rem">
+          <img
+            src="./assets/Minewalker.png"
+            class="card-img-top"
+            alt="Minewalker screenshot"
+            height="65%"
+          />
+          <div class="card-body" style="height: 35%">
+            <h5 class="card-title">
+              <a href="https://github.com/ericmailr/Minewalker"
+                ><i class="bi bi-github"></i> Minewalker</a
+              >
+            </h5>
+            <p class="card-text">Minesweeper variation written in Java!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="contact"
+      class="container-fluid d-flex flex-column align-items-center mt-5 py-5"
+    >
+      <div
+        class="container d-flex flex-column align-items-center middle-container"
+      >
+        <h3 class="section-heading">Contact</h3>
+        <div class="container row">
+          <div class="col d-flex justify-content-center">
+            <i class="bi bi-envelope-fill px-1"></i> ericmiller.code@gmail.com
+          </div>
+          <div class="col d-flex justify-content-center">
+            <i class="bi bi-telephone-fill px-2"></i> (208) 409-6412
+          </div>
+          <div class="col d-flex justify-content-center">
+            <a href="https://github.com/ericmailr"
+              ><i class="bi bi-github px-1"></i> GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
