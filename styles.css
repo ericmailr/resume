@@ -8271,8 +8271,10 @@ textarea.form-control-lg {
   --blue: #1e90ff;
   --white: #ffffff; }
 
-html {
-  overflow: auto; }
+html,
+body {
+  overflow: auto;
+  font-size: 16px; }
 
 body {
   padding-top: 50px;
@@ -8280,9 +8282,7 @@ body {
   background: linear-gradient(-180deg, #bcc1ce 0%, #929ead 98%), radial-gradient(at bottom left, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%);
   background-blend-mode: screen;
   min-height: 100%;
-  overflow: auto;
-  font-family: "Maitree", serif;
-  font-size: 16px; }
+  font-family: "Maitree", serif; }
 
 .text-muted a {
   text-decoration: none;
@@ -8298,7 +8298,6 @@ a:hover {
 .skills {
   list-style-type: none;
   font-size: 1.2rem;
-  white-space: nowrap;
   border-radius: 5px;
   box-shadow: 1px 1px 1px gray;
   padding: 20px;
@@ -8307,13 +8306,15 @@ a:hover {
 
 strong {
   color: #fbfbfb;
-  font-weight: normal; }
+  font-weight: normal;
+  white-space: nowrap; }
 
 .card {
   box-shadow: 1px 1px 1px gray; }
 
 .section-heading {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  font-size: 1.8rem; }
 
 h1, .h1 {
   padding: 5px;
@@ -8343,6 +8344,9 @@ h1, .h1 {
 .projects-container {
   width: 70vw; }
 
+.subprojects-container {
+  width: 70vw; }
+
 #contact {
   background-color: #2b2b2b;
   color: #fbfbfb; }
@@ -8353,16 +8357,45 @@ h1, .h1 {
 #contact .middle-container {
   width: 70vw; }
 
-/*@media (min-width: 1200px) {
+@media (max-width: 575.98px) {
+  html,
+  body {
+    font-size: 12px; }
+
   .skills {
-    font-size: 1rem;
-  }
-}*/
-@media (min-resolution: 129dpi) {
+    width: 80vw; }
+
+  .subprojects-container {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+
+  .projects-container {
+    width: 98vw; }
+
+  #contact .middle-container {
+    width: 100vw;
+    font-size: 0.9rem; } }
+@media (max-width: 767.98px) {
+  html,
+  body {
+    font-size: 12px; }
+
   .skills {
-    font-size: 1.4rem; } }
-@media (min-width: 1200px) {
-  .skills {
-    font-size: 1rem; } }
+    width: 80vw; }
+
+  .subprojects-container {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+
+  .projects-container {
+    width: 98vw; }
+
+  #contact .middle-container {
+    width: 100vw;
+    font-size: 0.9rem; } }
 
 /*# sourceMappingURL=styles.css.map */

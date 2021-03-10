@@ -4,8 +4,10 @@
   --blue: #1e90ff;
   --white: #ffffff;
 }
-html {
+html,
+body {
   overflow: auto;
+  font-size: 16px;
 }
 body {
   padding-top: 50px;
@@ -19,9 +21,7 @@ body {
     );
   background-blend-mode: screen;
   min-height: 100%;
-  overflow: auto;
   font-family: "Maitree", serif;
-  font-size: 16px;
 }
 
 .text-muted a {
@@ -41,7 +41,7 @@ a:hover {
 .skills {
   list-style-type: none;
   font-size: 1.2rem;
-  white-space: nowrap;
+  //white-space: nowrap;
   border-radius: 5px;
   box-shadow: 1px 1px 1px gray;
   padding: 20px;
@@ -52,6 +52,7 @@ a:hover {
 strong {
   color: #fbfbfb;
   font-weight: normal;
+  white-space: nowrap;
 }
 
 .card {
@@ -60,6 +61,7 @@ strong {
 
 .section-heading {
   margin-bottom: 30px;
+  font-size: 1.8rem;
 }
 
 h1 {
@@ -98,6 +100,10 @@ h1 {
   width: 70vw;
 }
 
+.subprojects-container {
+  width: 70vw;
+}
+
 #contact {
   background-color: #2b2b2b;
   color: #fbfbfb;
@@ -111,26 +117,52 @@ h1 {
   width: 70vw;
 }
 
-/*@media (min-width: 1200px) {
-  .skills {
-    font-size: 1rem;
+@include media-breakpoint-down(sm) {
+  html,
+  body {
+    font-size: 12px;
   }
-}*/
-
-@media (min-resolution: 129dpi) {
   .skills {
-    font-size: 1.4rem;
+    width: 80vw;
+  }
+  .subprojects-container {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .projects-container {
+    width: 98vw;
+  }
+  #contact .middle-container {
+    width: 100vw;
+    font-size: 0.9rem;
+  }
+}
+@include media-breakpoint-down(md) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  .skills {
+    width: 80vw;
+  }
+  .subprojects-container {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .projects-container {
+    width: 98vw;
+  }
+  #contact .middle-container {
+    width: 100vw;
+    font-size: 0.9rem;
   }
 }
 
-@include media-breakpoint-up(sm) {
-}
-@include media-breakpoint-up(md) {
-}
 @include media-breakpoint-up(lg) {
 }
 @include media-breakpoint-up(xl) {
-  .skills {
-    font-size: 1rem;
-  }
 }
