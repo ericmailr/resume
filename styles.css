@@ -8281,7 +8281,8 @@ body {
   background-blend-mode: screen;
   min-height: 100%;
   overflow: auto;
-  font-family: "Maitree", serif; }
+  font-family: "Maitree", serif;
+  font-size: 16px; }
 
 .text-muted a {
   text-decoration: none;
@@ -8353,7 +8354,7 @@ h1, .h1 {
 #contact .middle-container {
   width: 70vw; }
 
-@media (min-width: 1500px) {
+@media (min-width: 1050px) {
   .skills {
     font-size: 1rem; } }
 

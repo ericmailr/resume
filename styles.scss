@@ -21,6 +21,7 @@ body {
   min-height: 100%;
   overflow: auto;
   font-family: "Maitree", serif;
+  font-size: 16px;
 }
 
 .text-muted a {
@@ -41,7 +42,6 @@ a:hover {
   list-style-type: none;
   font-size: 1.2rem;
   white-space: nowrap;
-  //border: 1px solid #fbfbfb;
   border-radius: 5px;
   box-shadow: 1px 1px 1px gray;
   padding: 20px;
@@ -52,17 +52,10 @@ a:hover {
 strong {
   color: #fbfbfb;
   font-weight: normal;
-  //color: black;
-  //color: #3d9970;
-  //color: #ff4136;
 }
 
 .card {
   box-shadow: 1px 1px 1px gray;
-}
-
-.middle-container {
-  //width: 65vw;
 }
 
 .section-heading {
@@ -119,7 +112,7 @@ h1 {
   width: 70vw;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1050px) {
   .skills {
     font-size: 1rem;
   }
