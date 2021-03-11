@@ -41,12 +41,19 @@ a:hover {
 .skills {
   list-style-type: none;
   font-size: 1.2rem;
-  //white-space: nowrap;
   border-radius: 5px;
   box-shadow: 1px 1px 1px gray;
   padding: 20px;
-  background-color: #929ead;
   background-color: rgba(146, 158, 173, 0.3);
+}
+
+.skills li i {
+  padding-right: 0.5rem;
+}
+
+.skills li {
+  text-indent: -0.85rem;
+  padding-left: 1rem;
 }
 
 strong {
