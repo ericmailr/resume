@@ -8276,7 +8276,8 @@ body {
   overflow: auto;
   font-size: 20px;
   font-family: Roboto, sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  width: 100vw; }
 
 body {
   padding-top: 50px;
@@ -8400,19 +8401,17 @@ h1, .h1 {
     font-size: 12px; }
 
   .skills {
-    width: 80vw; }
+    width: 95vw; }
 
   .subprojects-container {
-    width: 100vw;
     flex-direction: column;
     align-items: center;
     justify-content: space-around; }
 
   .projects-container {
-    width: 98vw; }
+    width: 95vw; }
 
   #contact .middle-container {
-    width: 100vw;
     font-size: 0.9rem; }
 
   .contact-container {
@@ -8423,16 +8422,12 @@ h1, .h1 {
   body {
     font-size: 12px; }
 
-  .skills {
-    width: 80vw; }
-
   .subprojects-container {
     flex-direction: column;
     align-items: center;
     justify-content: space-around; }
 
   #contact .middle-container {
-    width: 100vw;
     font-size: 0.9rem; }
 
   .contact-container {
