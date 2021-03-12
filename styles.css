@@ -8280,11 +8280,17 @@ body {
 body {
   padding-top: 50px;
   color: #2b2b2b;
-  background: linear-gradient(-180deg, #bcc1ce 0%, #929ead 98%), radial-gradient(at bottom left, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%);
-  background-blend-mode: screen;
+  /*background: linear-gradient(-180deg, #bcc1ce 0%, #929ead 98%),
+    radial-gradient(
+      at bottom left,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    );
+  background-blend-mode: screen;*/
+  background-color: slategray;
   min-height: 100%; }
 
-.text-muted a {
+.secondary-font a {
   text-decoration: none;
   color: rgba(43, 43, 43, 0.8); }
 
@@ -8299,9 +8305,9 @@ a:hover {
   list-style-type: none;
   font-size: 1.2rem;
   border-radius: 5px;
-  box-shadow: 1px 1px 1px gray;
+  box-shadow: 1px 1px 1px 1px rgba(43, 43, 43, 0.8);
   padding: 20px;
-  background-color: rgba(146, 158, 173, 0.3); }
+  background-color: rgba(146, 158, 173, 0.5); }
 
 .skills li i {
   padding-right: 0.5rem; }
@@ -8316,7 +8322,9 @@ strong {
   white-space: nowrap; }
 
 .card {
-  box-shadow: 1px 1px 1px gray; }
+  background-color: #fbfbfb;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgba(43, 43, 43, 0.8); }
 
 .section-heading {
   margin-bottom: 30px;
@@ -8337,6 +8345,10 @@ h1, .h1 {
 .navbar-text {
   color: #fbfbfb; }
 
+.navbar li {
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px gray; }
+
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
   padding: 0; }
 
@@ -8348,9 +8360,6 @@ h1, .h1 {
   padding-top: 80px; }
 
 .projects-container {
-  width: 70vw; }
-
-.subprojects-container {
   width: 70vw; }
 
 #contact {
@@ -8382,26 +8391,43 @@ h1, .h1 {
 
   #contact .middle-container {
     width: 100vw;
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; }
+
+  .contact-container {
+    flex-direction: column;
+    justify-content: space-between; } }
 @media (max-width: 767.98px) {
   html,
   body {
-    font-size: 14px; }
+    font-size: 12px; }
 
   .skills {
     width: 80vw; }
 
   .subprojects-container {
-    width: 100vw;
     flex-direction: column;
     align-items: center;
     justify-content: space-around; }
 
-  .projects-container {
-    width: 98vw; }
-
   #contact .middle-container {
     width: 100vw;
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; }
+
+  .contact-container {
+    flex-direction: column;
+    justify-content: space-between; } }
+@media (max-width: 991.98px) {
+  html,
+  body {
+    font-size: 16px; }
+
+  .subprojects-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+
+  .contact-container {
+    flex-direction: column;
+    justify-content: space-between; } }
 
 /*# sourceMappingURL=styles.css.map */
