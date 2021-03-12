@@ -150,8 +150,8 @@ h1 {
   padding-top: 80px;
 }
 
-.projects-container {
-  // width: 70vw;
+.subprojects-container .card {
+  width: 20rem;
 }
 
 #contact {
@@ -167,48 +167,13 @@ h1 {
   width: 70vw;
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(md) {
   html,
   body {
     font-size: 12px;
   }
   .skills {
     width: 95vw;
-  }
-  .subprojects-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .projects-container {
-    width: 95vw;
-  }
-  #contact .middle-container {
-    font-size: 0.9rem;
-  }
-  .contact-container {
-    flex-direction: column;
-    justify-content: space-between;
-  }
-}
-@include media-breakpoint-down(md) {
-  html,
-  body {
-    font-size: 12px;
-  }
-
-  .subprojects-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  #contact .middle-container {
-    font-size: 0.9rem;
-  }
-  .contact-container {
-    flex-direction: column;
-    justify-content: space-between;
   }
 }
 
@@ -224,10 +189,12 @@ h1 {
     justify-content: space-around;
   }
 
+  .subprojects-container .card {
+    width: 100%;
+  }
+
   .contact-container {
     flex-direction: column;
     justify-content: space-between;
   }
-}
-@include media-breakpoint-up(xl) {
 }
