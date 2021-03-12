@@ -8276,8 +8276,8 @@ body {
   overflow: auto;
   font-size: 20px;
   font-family: Roboto, sans-serif;
-  font-weight: 300;
-  width: 100vw; }
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 300; }
 
 body {
   padding-top: 50px;
@@ -8325,7 +8325,10 @@ strong {
   border-style: none; }
 
 i {
-  vertical-align: 2px; }
+  vertical-align: 1.5px; }
+
+span a i {
+  vertical-align: 0.5px; }
 
 .card-title {
   background-color: rgba(43, 43, 43, 0.95);
@@ -8333,11 +8336,13 @@ i {
   text-align: center;
   margin-bottom: 0;
   background-color: rgba(251, 251, 251, 0.99);
-  border-radius: 8px 8px 0 0; }
+  border-radius: 8px 8px 0 0;
+  font-weight: 800; }
 
 .section-heading {
   margin-bottom: 30px;
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  font-weight: 800; }
 
 h1, .h1 {
   padding: 5px;

@@ -4,16 +4,17 @@
   --blue: #1e90ff;
   --white: #ffffff;
 }
+
 html,
 body {
   overflow: auto;
   font-size: 20px;
   font-family: Roboto, sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   font-weight: 300;
-  width: 100vw;
-
-  //font-family: Verdana, sans-serif;
+  //width: 100vw;
 }
+
 body {
   padding-top: 50px;
   color: #2b2b2b;
@@ -70,11 +71,12 @@ strong {
   border-style: none;
 }
 
-.card-body {
+i {
+  vertical-align: 1.5px;
 }
 
-i {
-  vertical-align: 2px;
+span a i {
+  vertical-align: 0.5px;
 }
 
 .card-title {
@@ -84,11 +86,13 @@ i {
   margin-bottom: 0;
   background-color: rgba(251, 251, 251, 0.99);
   border-radius: 8px 8px 0 0;
+  font-weight: 800;
 }
 
 .section-heading {
   margin-bottom: 30px;
   font-size: 1.8rem;
+  font-weight: 800;
 }
 
 h1 {
