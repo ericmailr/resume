@@ -17,56 +17,64 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
 
+    <link
+      href="fonts.googleapis.com/css?family=Roboto:100,300,400,700"
+      ;
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
     <link href="styles.css" rel="stylesheet" type="text/css" />
 
     <title>Eric Miller - Web Developer</title>
   </head>
   <body>
     <div class="container-fluid">
-      <nav class="navbar fixed-top navbar-expand navbar-custom navbar-text">
-        <div class="container-fluid justify-content-center">
-          <div id="navbarSupportedContent"">
-            <ul class="container-fluid navbar-nav">
-              <li class="nav-item mx-3">
-                <a
-                  class="nav-link active navbar-text"
-                  aria-current="page"
-                  href="#projects"
-                  >Sample Projects</a
-                >
-              </li>
-              <li class="nav-item mx-3">
-                <a
-                  class="nav-link navbar-text"
-                  href="./assets/EricMillerResume.pdf"
-                  >Resume</a
-                >
-              </li>
-              <li class="nav-item mx-3">
-                <a
-                  class="nav-link navbar-text"
-                  href="https://github.com/ericmailr"
-                  >GitHub</a
-                >
-              </li>
-              <li class="nav-item mx-3">
-                <a class="nav-link navbar-text" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
+      <nav class="navbar fixed-top navbar-expand navbar-custom navbar-text p-0">
+        <div class="container-fluid justify-content-around">
+          <ul class="container-fluid justify-content-around navbar-nav w-50">
+            <li class="nav-item">
+              <a
+                class="nav-link active navbar-text p-3"
+                aria-current="page"
+                href="#projects"
+                >Sample Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link navbar-text p-3"
+                href="./assets/EricMillerResume.pdf"
+                >Resume</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link navbar-text p-3"
+                href="https://github.com/ericmailr"
+                >GitHub</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-text p-3" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </div>
-    <div class="container d-flex justify-content-center mb-5 mt-3">
-      <h1 id="name">ERIC MILLER</h1>
+    <div class="container d-flex justify-content-center my-5">
+      <h1 id="name" class="my-2">ERIC MILLER</h1>
     </div>
     <div class="container-fluid d-flex flex-column align-items-center my-5">
       <div
         class="d-flex flex-column align-items-center skills-container middle-container"
       >
-        <h3 class="section-heading">
-          What I Can Do
-        </h3>
+        <h3 class="section-heading">What I Can Do</h3>
         <ul class="skills">
           <li class="mt-2">
             <i class="bi-caret-right-fill"></i>Deploy websites built via
@@ -74,12 +82,13 @@
             <strong>Ruby on Rails Framework</strong>
           </li>
           <li class="mt-2">
-            <i class="bi-caret-right-fill"></i>Design interactive UIs with efficient, encapsulated components using
-             <strong>React Javascript</strong> 
+            <i class="bi-caret-right-fill"></i>Design interactive UIs with
+            efficient, encapsulated components using
+            <strong>React Javascript</strong>
           </li>
           <li class="mt-2">
-            <i class="bi bi-caret-right-fill"></i>Use web development languages and tools like
-            <strong>HTML, CSS, Bootstrap,</strong> and
+            <i class="bi bi-caret-right-fill"></i>Use web development languages
+            and tools like <strong>HTML, CSS, Bootstrap,</strong> and
             <strong>Webpack</strong>
           </li>
           <li class="mt-2">
@@ -88,15 +97,18 @@
             <strong>Ruby</strong> or <strong>Java</strong>
           </li>
           <li class="mt-2">
-            <i class="bi bi-caret-right-fill"></i>Apply <strong>Test/Behavior-Driven-Development</strong> by
-            designing test suites with <strong>RSpec</strong>
+            <i class="bi bi-caret-right-fill"></i>Apply
+            <strong>Test/Behavior-Driven-Development</strong> by designing test
+            suites with <strong>RSpec</strong>
           </li>
           <li class="mt-2">
-            <i class="bi bi-caret-right-fill"></i>Manage projects and write code with <strong>Git Version Control, Linux, VSCode,</strong>
-            and <strong>Vim</strong>
+            <i class="bi bi-caret-right-fill"></i>Manage projects and write code
+            with <strong>Git Version Control, Linux, VSCode,</strong> and
+            <strong>Vim</strong>
           </li>
           <li class="mt-2">
-            <i class="bi bi-caret-right-fill"></i>Analyze and interpret data using <strong>Matlab</strong> scripting and computing platform
+            <i class="bi bi-caret-right-fill"></i>Analyze and interpret data
+            using <strong>Matlab</strong> scripting and computing platform
           </li>
         </ul>
       </div>
@@ -105,20 +117,17 @@
       <div
         class="container d-flex flex-column align-items-center middle-container"
       >
-        <h3 class="section-heading">
-          <i class="bi bi-chevron-compact-right"></i>
-          Sample Projects
-        </h3>
+        <h3 class="section-heading">Sample Projects</h3>
       </div>
       <div
         class="container d-flex flex-column align-items-center projects-container middle-container"
       >
         <div class="card my-3" style="width: 100%">
-            <h5 class="card-title py-3 mx-auto">
-              <a href="https://twitter-clone-ericmiller.herokuapp.com/"
-                ><i class="bi bi-arrow-right-circle"></i> Twitter Clone </a
-              >
-            </h5>
+          <h5 class="card-title py-3 mx-auto">
+            <a href="https://twitter-clone-ericmiller.herokuapp.com/"
+              ><i class="bi bi-arrow-right-circle"></i> Twitter Clone
+            </a>
+          </h5>
 
           <img
             src="./assets/twitter.png"
@@ -126,22 +135,23 @@
             alt="twitter app screenshot"
           />
           <div class="card-body mx-auto" style="height: 6rem">
-            <span class="mx-auto mb-2 d-flex justify-content-center secondary-font">
-            <a href="https://github.com/ericmailr/weather-app"
-              ><i class="bi bi-github"></i> GitHub</a
-            ></span>
-            <p class="card-text">
-              Built with Ruby on Rails and ReactJS.
-            </p>
+            <span
+              class="mx-auto mb-2 d-flex justify-content-center secondary-font"
+            >
+              <a href="https://github.com/ericmailr/weather-app"
+                ><i class="bi bi-github"></i> GitHub</a
+              ></span
+            >
+            <p class="card-text">Built with Ruby on Rails and ReactJS.</p>
           </div>
         </div>
-        
+
         <div class="card my-3" style="width: 100%">
-            <h5 class="card-title py-3 mx-auto">
-              <a href="https://ericmailr.github.io/todo-list/"
-                ><i class="bi bi-arrow-right-circle"></i> Todo List </a
-              >
-            </h5>
+          <h5 class="card-title py-3 mx-auto">
+            <a href="https://ericmailr.github.io/todo-list/"
+              ><i class="bi bi-arrow-right-circle"></i> Todo List
+            </a>
+          </h5>
 
           <img
             src="./assets/todo.png"
@@ -149,76 +159,78 @@
             alt="todo list app screenshot"
           />
           <div class="card-body mx-auto" style="height: 6rem">
-            <span class="mx-auto mb-2 d-flex justify-content-center secondary-font">
-            <a href="https://github.com/ericmailr/todo-list"
-              ><i class="bi bi-github"></i> GitHub</a
+            <span
+              class="mx-auto mb-2 d-flex justify-content-center secondary-font"
             >
+              <a href="https://github.com/ericmailr/todo-list"
+                ><i class="bi bi-github"></i> GitHub</a
+              >
             </span>
-            <p class="card-text">
-              Built with pure vanilla Javascript.
-            </p>
+            <p class="card-text">Built with pure vanilla Javascript.</p>
           </div>
         </div>
-      <div
-        class="container-fluid my-4 d-flex justify-content-between subprojects-container"
-      >
-        <div class="card my-3 mx-2" style="width: 20rem;">
+        <div
+          class="container-fluid my-4 d-flex justify-content-between subprojects-container"
+        >
+          <div class="card my-3 mx-2" style="width: 20rem">
             <h5 class="card-title py-3 mx-auto">
               <a href="https://ericmailr.github.io/weather-app/"
                 ><i class="bi bi-arrow-right-circle"></i> Weather App</a
               >
             </h5>
-          <img
-            src="./assets/weather.png"
-            class="card-img-top"
-            alt="weather app screenshot"
-            height="60%"
-          />
-          <div class="card-body" style="height: 8rem">
-            <span><a href="https://github.com/ericmailr/weather-app"
-              ><i class="bi bi-github"></i> GitHub</a
-            ></span>
-            <p class="card-text">
-              Javascript app that fetches data from a Weather API.
-            </p>
+            <img
+              src="./assets/weather.png"
+              class="card-img-top"
+              alt="weather app screenshot"
+              height="60%"
+            />
+            <div class="card-body" style="height: 8rem">
+              <span
+                ><a href="https://github.com/ericmailr/weather-app"
+                  ><i class="bi bi-github"></i> GitHub</a
+                ></span
+              >
+              <p class="card-text">
+                Javascript app that fetches data from a Weather API.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card my-3 mx-2" style="width: 20rem;">
+          <div class="card my-3 mx-2" style="width: 20rem">
             <h5 class="card-title py-3 mx-auto">
               <a href="https://github.com/ericmailr/ruby_final_project">
                 <i class="bi bi-github"></i> Chess</a
               >
             </h5>
-          <img
-            src="./assets/chess.png"
-            class="card-img-top"
-            alt="chess"
-            height="60%"
-          />
-          <div class="card-body" style="height: 8rem">
-            <p class="card-text">Written in Ruby. Tested with RSpec!</p>
+            <img
+              src="./assets/chess.png"
+              class="card-img-top"
+              alt="chess"
+              height="60%"
+            />
+            <div class="card-body" style="height: 8rem">
+              <p class="card-text">Written in Ruby. Tested with RSpec!</p>
+            </div>
           </div>
-        </div>
-        <div class="card my-3 mx-2" style="width: 20rem;">
+          <div class="card my-3 mx-2" style="width: 20rem">
             <h5 class="card-title py-3 mx-auto">
               <a href="https://github.com/ericmailr/Minewalker"
                 ><i class="bi bi-github"></i> Minewalker</a
               >
             </h5>
 
-          <img
-            src="./assets/Minewalker.png"
-            class="card-img-top"
-            alt="Minewalker screenshot"
-            height="60%"
-          />
-          <div class="card-body" style="height: 8rem">
-            <p class="card-text">Minesweeper variation written in Java!</p>
+            <img
+              src="./assets/Minewalker.png"
+              class="card-img-top"
+              alt="Minewalker screenshot"
+              height="60%"
+            />
+            <div class="card-body" style="height: 8rem">
+              <p class="card-text">Minesweeper variation written in Java!</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
     <div
       id="contact"
       class="container-fluid d-flex flex-column align-items-center mt-5 py-5"
