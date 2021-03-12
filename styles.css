@@ -8324,10 +8324,10 @@ strong {
   box-shadow: 2px 2px 3px 2px rgba(43, 43, 43, 0.5);
   border-style: none; }
 
-i {
+#projects i {
   vertical-align: 1.5px; }
 
-span a i {
+#projects span a i {
   vertical-align: 0.5px; }
 
 .card-title {
