@@ -44,8 +44,7 @@ a:hover {
   border-radius: 8px;
   box-shadow: 2px 2px 3px 2px rgba(43, 43, 43, 0.5);
   padding: 20px;
-  background-color: rgba(146, 158, 173, 0.9);
-  background-color: rgba(251, 251, 251, 0.5);
+  background-color: rgba(251, 251, 251, 0.75);
 }
 
 .skills li i {
@@ -65,10 +64,25 @@ strong {
 .card {
   background-color: #fbfbfb;
   border-radius: 8px;
-  box-shadow: 1px 1px 1px 1px rgba(43, 43, 43, 0.8);
+  //box-shadow: 1px 1px 1px 1px rgba(43, 43, 43, 0.8);
+  box-shadow: 2px 2px 3px 2px rgba(43, 43, 43, 0.5);
+  border-style: none;
 }
 
 .card-body {
+}
+
+i {
+  vertical-align: 2px;
+}
+
+.card-title {
+  background-color: rgba(43, 43, 43, 0.95);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+  background-color: rgba(251, 251, 251, 0.99);
+  border-radius: 8px 8px 0 0;
 }
 
 .section-heading {
@@ -101,7 +115,7 @@ h1 {
   transition-duration: 0.2s;
   border-left: 1pt solid rgba(255, 255, 255, 0.5);
   border-right: 1pt solid rgba(255, 255, 255, 0.5);
-  border-radius: 3px;
+  border-radius: 1px;
 }
 
 .navbar li:hover {
