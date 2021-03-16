@@ -37,7 +37,9 @@ a:hover {
 }
 
 #name {
-  text-shadow: 2pt 2pt rgba(43, 43, 43, 0.5);
+  //text-shadow: .5pt .5pt rgba(43, 43, 43, 0.5);
+  font-family: Roboto;
+  font-weight: 800;
 }
 
 .skills {
