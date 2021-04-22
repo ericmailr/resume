@@ -1,9 +1,11 @@
 @import "./node_modules/bootstrap/scss/bootstrap";
 
 :root {
-  --blue: #1e90ff;
+  $blue: #1e90ff;
   --white: #ffffff;
 }
+
+$secondary-background-color: #2b2b2b;
 
 html,
 body {
@@ -12,7 +14,8 @@ body {
   font-family: Roboto, sans-serif;
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 300;
-  //width: 100vw;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -40,6 +43,52 @@ a:hover {
   //text-shadow: .5pt .5pt rgba(43, 43, 43, 0.5);
   font-family: Roboto;
   font-weight: 800;
+  //font-weight: 200;
+  //text-shadow: 0 0 2px #ffd100, 0 0 30px #ffd100, 0px 0px 5px #ffd100,
+  //  0 0 150px #ffd100;
+  //color: #ffd100;
+  //color: $blue;
+  //background-color: #2e8ece;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding: 1px;
+  font-family: "Raleway", cursive;
+  font-weight: 100;
+  position: relative;
+  background: linear-gradient(
+    to right,
+    $secondary-background-color,
+    #eee,
+    $secondary-background-color
+  );
+}
+
+#name::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  width: 600px;
+  margin-left: -300px;
+  margin-top: -220px;
+  height: 600px;
+  background: radial-gradient(
+    50% 50%,
+    ellipse closest-side,
+    #444,
+    $secondary-background-color
+  );
+  z-index: -1;
+}
+
+#name a {
+  background: $secondary-background-color;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  letter-spacing: 30px;
+  color: white;
 }
 
 .skills {
@@ -62,7 +111,7 @@ a:hover {
 
 strong {
   font-weight: 400;
-  white-space: nowrap;
+  white-space: wrap;
 }
 
 .card {
@@ -95,6 +144,8 @@ strong {
   margin-bottom: 30px;
   font-size: 1.8rem;
   font-weight: 800;
+  font-family: "Raleway", cursive;
+  font-weight: 400;
 }
 
 h1 {
@@ -167,6 +218,12 @@ h1 {
 
 #contact .middle-container {
   width: 70vw;
+}
+
+@include media-breakpoint-only(xs) {
+  #name a {
+    letter-spacing: 10px;
+  }
 }
 
 @include media-breakpoint-down(md) {
