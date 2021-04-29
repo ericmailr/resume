@@ -48,6 +48,10 @@ body {
   align-items: center;
 }
 
+.skills i::before {
+  padding-bottom: 4px;
+}
+
 #contact a i {
   margin-top: 0;
   display: inline-flex;
